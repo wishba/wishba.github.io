@@ -1,33 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import Card from './components/Card'
+import imgAdvice from './assets/sc-sqr-advice.png'
+import imgNews from './assets/sc-sqr-news.png'
+import imgSunny from './assets/sc-sqr-sunny.png'
+import imgTime from './assets/sc-sqr-time.png'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const main = {
+    maxWidth: '22.5rem',
+    display: 'grid',
+    margin: 'auto'
+  }
+  const gridContainer = {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    placeItems: 'center',
+    gap: '1rem'
+  }
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <main style={main}>
+      <section>
+        <h1>Wisnu Bayu</h1>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          I am an informatics engineering student who likes front-end development
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+      </section>
+
+      <section>
+        <h2>Recent Project</h2>
+        <div style={gridContainer}>
+          <Card
+            image={imgAdvice}
+            title='Advice Generator App'
+            link='https://wishba.github.io/advice-generator-app-main/'
+          />
+          <Card
+            image={imgNews}
+            title='News Homepage'
+            link='https://wishba.github.io/news-homepage-main/'
+          />
+          <Card
+            image={imgSunny}
+            title='Sunnyside agency landing page'
+            link='https://wishba.github.io/sunnyside-agency-landing-page-main/'
+          />
+          <Card
+            image={imgTime}
+            title='Time Tracking Dashboard App'
+            link='https://wishba.github.io/time-tracking-dashboard-main/'
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2>Socials</h2>
+        <div style={gridContainer}>
+          <a href="https://twitter.com/wishba_" target="_blank" rel="noopener noreferrer">
+            twitter @wishba_
+          </a>
+          <a href="https://github.com/wishba" target="_blank" rel="noopener noreferrer">
+            github @wishba
+          </a>
+        </div>
+      </section>
+    </main>
   )
 }
 
