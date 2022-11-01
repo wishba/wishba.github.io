@@ -1,4 +1,8 @@
 import Card from './Card'
+import imgAdvice from './assets/sc-sqr-advice.png'
+import imgNews from './assets/sc-sqr-news.png'
+import imgSunny from './assets/sc-sqr-sunny.png'
+import imgTime from './assets/sc-sqr-time.png'
 
 function App() {
   const main = {
@@ -30,22 +34,22 @@ function App() {
           <h2>Recent Project</h2>
           <div style={gridContainer}>
             <Card
-              image='/sc-sqr-advice.png'
+              image={imgAdvice}
               title='Advice Generator App'
               link='https://wishba.github.io/advice-generator-app-main/'
             />
             <Card
-              image='sc-sqr-news.png'
+              image={imgNews}
               title='News Homepage'
               link='https://wishba.github.io/news-homepage-main/'
             />
             <Card
-              image='sc-sqr-sunny.png'
+              image={imgSunny}
               title='Sunnyside agency landing page'
               link='https://wishba.github.io/sunnyside-agency-landing-page-main/'
             />
             <Card
-              image='sc-sqr-time.png'
+              image={imgTime}
               title='Time Tracking Dashboard App'
               link='https://wishba.github.io/time-tracking-dashboard-main/'
             />
