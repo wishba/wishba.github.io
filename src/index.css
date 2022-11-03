@@ -52,6 +52,10 @@ main {
   gap: 1rem;
 }
 
+.me__desc {
+  margin-bottom: 0;
+}
+
 .card {
   width: 25vw;
   margin: 0 auto;

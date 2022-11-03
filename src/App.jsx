@@ -15,7 +15,7 @@ function App() {
             Wisnu Bayu
           </span>
         </h1>
-        <p>
+        <p className='me__desc'>
           I am an informatics engineering student who has a passion for front end development field
         </p>
       </section>
