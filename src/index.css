@@ -16,13 +16,13 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  color: #2c5064;
-  background-color: #d4edf4;
+  background-color: #d3d3d3;
 }
 
 h1,
 h2 {
   font-family: 'Radley', serif;
+  color: #204255;
 }
 
 h1 span {
@@ -32,8 +32,8 @@ h1 span {
 
 p,
 a {
-  color: #224152;
   font-family: 'Arsenal', sans-serif;
+  color: #112834;
 }
 
 a:hover {
