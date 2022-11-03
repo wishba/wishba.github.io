@@ -61,8 +61,9 @@ main {
   text-decoration: none;
 }
 
-.card__link:hover .card__image {
-  transform: scale(110%);
+.card__link:hover .card__image,
+.card__image:hover {
+  transform: scale(110%) translateY(-5%);
 }
 
 .card__image {
