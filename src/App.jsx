@@ -5,33 +5,24 @@ import imgSunny from './assets/sc-sqr-sunny.png'
 import imgTime from './assets/sc-sqr-time.png'
 
 function App() {
-  const main = {
-    maxWidth: '22.5rem',
-    display: 'grid',
-    margin: 'auto'
-  }
-  const gridContainer = {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    placeItems: 'center',
-    gap: '1rem'
-  }
   return (
-    <main style={main}>
+    <main>
       <section>
         <h1>
-          Hello! My Name Is
+          Hello! My name is
           <br />
-          Wisnu Bayu
+          <span>
+            Wisnu Bayu
+          </span>
         </h1>
         <p>
-          I am an informatics engineering student who really likes the field of front-end development.
+          I am an informatics engineering student who has a passion for front end development field
         </p>
       </section>
 
       <section>
-        <h2>Recent Project</h2>
-        <div style={gridContainer}>
+        <h2>My Recent Project</h2>
+        <div className='grid__container'>
           <Card
             image={imgAdvice}
             title='Advice Generator App'
@@ -56,8 +47,8 @@ function App() {
       </section>
 
       <section>
-        <h2>Socials</h2>
-        <div style={gridContainer}>
+        <h2 className='social__header'>My Socials</h2>
+        <div className='grid__container'>
           <a href="https://twitter.com/wishba_" target="_blank" rel="noopener noreferrer">
             twitter @wishba_
           </a>

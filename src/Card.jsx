@@ -1,18 +1,10 @@
 import React from 'react'
 
 function Card(props) {
-  const card = {
-    textAlign: 'center',
-    width: '25vw',
-    maxWidth: '10rem'
-  }
-  const cardImg = {
-    width: '100%'
-  }
   return (
-    <div style={card}>
+    <div className='card'>
       <img
-        style={cardImg}
+        className='card__image'
         src={props.image}
         alt={props.image}
       />
