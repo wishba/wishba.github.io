@@ -14,7 +14,7 @@ function Card(props) {
           src={props.image}
           alt={props.image}
         />
-        {props.title}
+        <p className='card__title'>{props.title}</p>
       </a>
     </div>
   )
