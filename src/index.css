@@ -25,23 +25,19 @@ h2 {
   font-family: 'Radley', serif;
 }
 
+h1 span {
+  font-size: 2.5rem;
+  font-family: 'Arsenal', sans-serif;
+}
+
 p,
-a,
-span {
+a {
   color: #224152;
   font-family: 'Arsenal', sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 a:hover {
   font-weight: 600;
-}
-
-span {
-  font-size: 2.5rem;
 }
 
 main {
@@ -59,6 +55,14 @@ main {
 .card {
   width: 25vw;
   margin: 0 auto;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__link:hover .card__image {
+  transform: scale(110%);
 }
 
 .card__image {
