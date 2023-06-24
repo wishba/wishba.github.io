@@ -1,1 +1,1 @@
-# [https://wishba.github.io/](https://wishba.github.io/)
+# [wishba.github.io](https://wishba.github.io/)
