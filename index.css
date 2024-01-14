@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+}
+
+body {
+  max-width: 70rem;
+  margin: auto;
+}
+
+.intro {
+  text-align: justify;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.project>* {
+  width: 100%;
+}
+
+@media screen and (max-width: 50rem) {
+
+  .tree,
+  .social {
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .container__tree-intro {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .project {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media screen and (min-width: 70rem) {
+  .container__project-social {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

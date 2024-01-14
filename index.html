@@ -3,66 +3,51 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wisnu Bayu</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@v0.153.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@v0.153.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="module" src="./TreeBox.js" defer></script>
 </head>
 
 <body>
-  <main class="container">
-    <h1>Hi there, I'm Wisnu Bayu</h1>
-    <p>
-      An aspiring web developer and web designer specializing in front-end web development with React. I have experience
-      in various web development and web design projects, and I'm always eager to learn more. I invite you to explore my
-      portfolio to see examples of my work and discover my approach to web development and design through examples of my
-      work.
-    </p>
 
-    <div style="text-align: center;">
-      <a href="#connect" role="button">Connect With Me</a>
+  <div class="container__tree-intro">
+    <div id="tree" class="tree"></div>
+
+    <div>
+      <h1>hello!</h1>
+      <p class="intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, in fugiat similique cum
+        velit dicta
+        dolores
+        eum, delectus temporibus sapiente doloremque incidunt nam. Voluptas dolores, numquam expedita perferendis qui
+        vel?
+      </p>
+    </div>
+  </div>
+
+  <div class="container__project-social">
+    <div class="project">
+      <img src="public/sunny.png" alt="">
+      <img src="public/todo.png" alt="">
+      <img src="public/snap.png" alt="">
+      <img src="public/game.png" alt="">
     </div>
 
-    <h2>My recent projects:</h2>
-
-    <div class="grid" style="text-align: center;">
-      <div>
-        <a href="https://wishba.github.io/sunnyside-agency-landing-page-main/" target="_blank">
-          <img src="sunny.png" alt="Landing Page Popup Navigation">
-          <p>Landing Page Popup Navigation</p>
-        </a>
-      </div>
-      <div>
-        <a href="https://wishba.github.io/intro-section-with-dropdown-navigation/" target="_blank">
-          <img src="snap.png" alt="Intro Section Dropdown Navigation">
-          <p>Intro Section Dropdown Navigation</p>
-        </a>
-      </div>
-    </div>
-
-    <div class="grid" style="text-align: center;">
-      <div>
-        <a href="https://todo-serverless.netlify.app/" target="_blank">
-          <img src="todo.png" alt="Todo App Serverless Backend">
-          <p>Todo App Serverless Backend</p>
-        </a>
-      </div>
-      <div>
-        <a href="https://wishba.itch.io/find-the-treasure" target="_blank">
-          <img src="game.png" alt="Web Game React App">
-          <p>Web Game React App</p>
-        </a>
-      </div>
-    </div>
-
-    <h2 id="connect">Connect with me:</h2>
-    <ul>
+    <ul class="social">
       <li><a href="https://www.linkedin.com/in/wisnu-bayu-43469a269" target="_blank">LinkedIn</a></li>
       <li><a href="https://twitter.com/wishba_" target="_blank">Twitter</a></li>
       <li><a href="https://github.com/wishba" target="_blank">GitHub</a></li>
       <li><a href="https://wishba.hashnode.dev/" target="_blank">Blog</a></li>
     </ul>
-  </main>
+  </div>
 </body>
 
 </html>
