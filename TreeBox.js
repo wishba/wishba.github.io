@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const scene = new THREE.Scene();
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth / 5, window.innerHeight / 5);
-// renderer.setClearColor(0x000000, 0);
+renderer.setClearColor(0x000000, 0);
 const tree = document.getElementById('tree')
 tree.appendChild(renderer.domElement);
 

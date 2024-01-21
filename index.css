@@ -7,8 +7,24 @@ body {
   margin: auto;
 }
 
+.card {
+  border: .15rem solid black;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: .5rem;
+}
+
+.tree {
+  width: fit-content;
+}
+
+h1 {
+  padding: 1rem 1rem 0;
+}
+
 .intro {
   text-align: justify;
+  padding: 1rem;
 }
 
 .project {
@@ -16,14 +32,13 @@ body {
   grid-template-columns: auto auto;
 }
 
-.project>* {
+.project img {
   width: 100%;
 }
 
 @media screen and (max-width: 50rem) {
 
-  .tree,
-  .social {
+  .tree {
     width: fit-content;
     margin: auto;
   }
@@ -35,6 +50,18 @@ body {
     flex-direction: row-reverse;
   }
 
+  .tree__container {
+    position: relative;
+    width: 50%;
+  }
+
+  .tree {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .project {
     grid-template-columns: auto auto auto auto;
   }
@@ -44,5 +71,9 @@ body {
   .container__project-social {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .social {
+    width: 20%;
   }
 }
