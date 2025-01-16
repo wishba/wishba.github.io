@@ -2,20 +2,120 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wisnu Bayu</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script type="module" crossorigin src="/assets/index-6718ebad.js"></script>
-  <link rel="stylesheet" href="/assets/index-ab44f01a.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wishba</title>
 </head>
 
-<body>
-  <div id="root"></div>
-  
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<style>
+  .body--light {
+    background-color: white;
+    color: black;
+  }
+
+  .body--dark {
+    background-color: black;
+    color: white;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+</style>
+
+<body style="
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  box-sizing: border-box;
+" class="body--dark">
+  <header style="
+    display: flex;
+    justify-content: space-between;
+  ">
+    <nav style="
+      display: flex;
+      gap: 1rem;
+    ">
+      <a href="">Home</a>
+      <a href="">Project</a>
+      <a href="">Socials</a>
+      <a href="https://wishba-blog.vercel.app/">Blog</a>
+    </nav>
+
+    <div>
+      <button id="button-sun" style="
+        background-color: transparent;
+        border: none; 
+        cursor: pointer;
+      ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+          strokeLinecap="round" strokeLinejoin="round" style="
+          width:1.5rem;
+          stroke-width: 1.5;
+          stroke: black;
+        ">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2" />
+          <path d="M12 20v2" />
+          <path d="m4.93 4.93 1.41 1.41" />
+          <path d="m17.66 17.66 1.41 1.41" />
+          <path d="M2 12h2" />
+          <path d="M20 12h2" />
+          <path d="m6.34 17.66-1.41 1.41" />
+          <path d="m19.07 4.93-1.41 1.41" />
+        </svg>
+      </button>
+
+      <button id="button-moon" style="
+        background-color: transparent;
+        border: none; 
+        cursor: pointer;
+      ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+          strokeLinecap="round" strokeLinejoin="round" style="
+        width:1.5rem;
+        stroke-width: 1.5;
+        stroke: white;
+        ">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section>Home</section>
+
+    <section>Project</section>
+
+    <section>Socials</section>
+  </main>
+
+  <footer style="
+    padding-top: 2.5rem;
+  ">footer</footer>
+
   <script>
-    AOS.init();
+    document.getElementById('button-moon').addEventListener('click', () => {
+      console.log('light');
+      document.body.classList.add('body--light')
+      document.body.classList.remove('body--dark')
+      document.getElementById('button-moon').style.display = 'none';
+      document.getElementById('button-sun').style.display = 'block';
+    })
+
+    document.getElementById('button-sun').addEventListener('click', () => {
+      console.log('dark');
+      document.body.classList.add('body--dark')
+      document.body.classList.remove('body--light')
+      document.getElementById('button-sun').style.display = 'none';
+      document.getElementById('button-moon').style.display = 'block';
+    })
   </script>
 </body>
 
