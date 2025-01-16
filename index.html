@@ -22,6 +22,22 @@
     color: inherit;
     text-decoration: none;
   }
+
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  .project__list {
+    text-align: center;
+    width: 45%;
+  }
+
+  .project__img {
+    max-width: 100%;
+  }
 </style>
 
 <body style="
@@ -89,11 +105,41 @@
   </header>
 
   <main>
-    <section>Home</section>
+    <section>
+      <h1>Home</h1>
+    </section>
 
-    <section>Project</section>
+    <section>
+      <h2>Project</h2>
 
-    <section>Socials</section>
+      <ul class="project">
+        <li class="project__list"><a href="https://wishba.github.io/intro-section-with-dropdown-navigation/"
+            target="_blank" rel="noopener noreferrer">
+            <img class="project__img" src="assets/intro navigation.png" alt="intro navigation">
+            <p>Intro Navigation</p>
+          </a></li>
+        <li class="project__list"><a href="https://wishba.itch.io/pick-the-apples" target="_blank"
+            rel="noopener noreferrer">
+            <img class="project__img" src="assets/react game.png" alt="react game">
+            <p>React Game</p>
+          </a></li>
+        <li class="project__list"><a href="https://wishba-todo-serverless.netlify.app/" target="_blank"
+            rel="noopener noreferrer">
+            <img class="project__img" src="assets/react todo.png" alt="react todo">
+            <p>React Todo</p>
+          </a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Socials</h2>
+
+      <ul>
+        <li><a href="https://www.linkedin.com/in/wisnu-bayu-54214329b/" target="_blank"
+            rel="noopener noreferrer">Linkedin</a></li>
+        <li><a href="https://twitter.com/wishba_" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer style="
