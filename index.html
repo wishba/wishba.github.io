@@ -112,6 +112,9 @@
 
   .footer {
     padding-top: 2.5rem;
+    color: rgb(163 163 163 / 1);
+    font-size: 0.875rem;
+    margin: 0;
   }
 </style>
 
@@ -246,7 +249,12 @@
     </section>
   </main>
 
-  <footer class="footer">footer</footer>
+  <footer>
+    <hr>
+    <p class="footer">
+      &copy; <span id="copy-year"></span> Wisnu Bayu
+    </p>
+  </footer>
 
   <script>
     document.getElementById('button-moon').addEventListener('click', () => {
@@ -264,6 +272,8 @@
       document.getElementById('button-sun').style.display = 'none';
       document.getElementById('button-moon').style.display = 'block';
     })
+
+    document.getElementById('copy-year').textContent = new Date().getFullYear()
   </script>
 </body>
 
