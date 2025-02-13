@@ -41,9 +41,7 @@
     position: sticky;
     top: 0;
     padding: .5rem 0;
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background-color: black;
   }
 
   .header__nav {
@@ -282,8 +280,7 @@
       document.body.classList.remove('body--dark')
       document.getElementById('button-moon').style.display = 'none'
       document.getElementById('button-sun').style.display = 'block'
-      document.querySelector('header').style.background = 'rgba(255, 255, 255, 0.2)'
-      // document.querySelector('header').style.backgroundColor = 'white'
+      document.querySelector('header').style.backgroundColor = 'white'
     })
 
     document.getElementById('button-sun').addEventListener('click', () => {
@@ -292,8 +289,7 @@
       document.body.classList.remove('body--light')
       document.getElementById('button-sun').style.display = 'none'
       document.getElementById('button-moon').style.display = 'block'
-      document.querySelector('header').style.background = 'rgba(0, 0, 0, 0.2)'
-      // document.querySelector('header').style.backgroundColor = 'black'
+      document.querySelector('header').style.backgroundColor = 'black'
     })
 
     document.getElementById('copy-year').textContent = new Date().getFullYear()
