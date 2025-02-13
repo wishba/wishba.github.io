@@ -16,7 +16,7 @@
   .body {
     max-width: 48rem;
     margin: 0 auto;
-    padding: 2.5rem 1.25rem;
+    padding: 2rem 1.25rem;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -38,6 +38,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    padding: .5rem 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
 
   .header__nav {
@@ -50,6 +56,10 @@
     border: none;
     cursor: pointer;
     padding: 0;
+  }
+
+  #button-sun {
+    display: none;
   }
 
   .header__svg {
@@ -67,6 +77,15 @@
 
   .home {
     text-align: justify;
+  }
+
+  section {
+    padding-top: 3rem;
+    margin-top: -3rem;
+  }
+
+  .home h1 {
+    margin-top: 0;
   }
 
   .project {
@@ -258,19 +277,23 @@
 
   <script>
     document.getElementById('button-moon').addEventListener('click', () => {
-      console.log('light');
+      console.log('light')
       document.body.classList.add('body--light')
       document.body.classList.remove('body--dark')
-      document.getElementById('button-moon').style.display = 'none';
-      document.getElementById('button-sun').style.display = 'block';
+      document.getElementById('button-moon').style.display = 'none'
+      document.getElementById('button-sun').style.display = 'block'
+      document.querySelector('header').style.background = 'rgba(255, 255, 255, 0.2)'
+      // document.querySelector('header').style.backgroundColor = 'white'
     })
 
     document.getElementById('button-sun').addEventListener('click', () => {
-      console.log('dark');
+      console.log('dark')
       document.body.classList.add('body--dark')
       document.body.classList.remove('body--light')
-      document.getElementById('button-sun').style.display = 'none';
-      document.getElementById('button-moon').style.display = 'block';
+      document.getElementById('button-sun').style.display = 'none'
+      document.getElementById('button-moon').style.display = 'block'
+      document.querySelector('header').style.background = 'rgba(0, 0, 0, 0.2)'
+      // document.querySelector('header').style.backgroundColor = 'black'
     })
 
     document.getElementById('copy-year').textContent = new Date().getFullYear()
