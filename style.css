@@ -107,10 +107,8 @@ section {
   text-align: center;
 }
 
-.social__list--grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4.5rem;
+.social__list li {
+  max-width: 5rem;
 }
 
 .social__list svg {
