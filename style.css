@@ -80,7 +80,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0 1rem;
+  padding: 0;
   justify-content: space-between;
 }
 
@@ -102,10 +102,10 @@ section {
   margin: 0;
   display: flex;
   width: calc(100% - 2rem);
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 4.5rem;
+  gap: 1rem;
   text-align: center;
 }
 
