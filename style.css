@@ -77,16 +77,12 @@ section {
 }
 
 .project {
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  justify-content: space-between;
-}
-
-.project__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   text-align: center;
-  width: 45%;
 }
 
 .project__img {
@@ -101,7 +97,6 @@ section {
   padding: 0;
   margin: 0;
   display: flex;
-  width: calc(100% - 2rem);
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
