@@ -85,9 +85,22 @@ section {
   text-align: center;
 }
 
+.project>li {
+  border: 1px solid white;
+  border-radius: .5rem;
+}
+
+.project__frontend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 100%;
+  margin: 0;
+}
+
 .project__img {
   max-width: 100%;
-  border: 1px solid black;
   border-radius: .5rem;
 }
 

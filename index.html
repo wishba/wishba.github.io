@@ -75,6 +75,11 @@
             <img class="project__img" src="assets/react game.png" alt="react game">
             <p>Web Game Prototype React JS</p>
           </a></li>
+        <li>
+          <a href="https://wishba.github.io/frontendmentor-project/" target="_blank" rel="noopener noreferrer">
+            <p class="project__frontend">More Frontend Project</p>
+          </a>
+        </li>
       </ul>
     </section>
 
@@ -160,6 +165,7 @@
       document.getElementById('button-moon').style.display = 'none'
       document.getElementById('button-sun').style.display = 'block'
       document.querySelector('header').style.backgroundColor = 'white'
+      document.querySelectorAll('.project>li').forEach(el => el.style.borderColor = 'black')
     })
 
     document.getElementById('button-sun').addEventListener('click', () => {
@@ -169,6 +175,7 @@
       document.getElementById('button-sun').style.display = 'none'
       document.getElementById('button-moon').style.display = 'block'
       document.querySelector('header').style.backgroundColor = 'black'
+      document.querySelectorAll('.project>li').forEach(el => el.style.borderColor = 'white')
     })
 
     document.getElementById('copy-year').textContent = new Date().getFullYear()
