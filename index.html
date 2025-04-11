@@ -62,20 +62,22 @@
       <h2>Project</h2>
 
       <ul class="project">
-        <li><a href="https://wishba.github.io/intro-section-with-dropdown-navigation/" target="_blank"
-            rel="noopener noreferrer">
+        <li class="project__li"><a href="https://wishba.github.io/intro-section-with-dropdown-navigation/"
+            target="_blank" rel="noopener noreferrer">
             <img class="project__img" src="assets/intro navigation.png" alt="intro navigation">
             <p>Product Page Dropdown Navigation</p>
           </a></li>
-        <li><a href="https://wishba-notes-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <li class="project__li"><a href="https://wishba-notes-app.netlify.app/" target="_blank"
+            rel="noopener noreferrer">
             <img class="project__img" src="assets/react note.jpeg" alt="react todo">
             <p>Notes App Serverless React Js</p>
           </a></li>
-        <li><a href="https://wishba.itch.io/pick-the-apples" target="_blank" rel="noopener noreferrer">
+        <li class="project__li"><a href="https://wishba.itch.io/pick-the-apples" target="_blank"
+            rel="noopener noreferrer">
             <img class="project__img" src="assets/react game.png" alt="react game">
             <p>Web Game Prototype React JS</p>
           </a></li>
-        <li>
+        <li class="project__li">
           <a href="https://wishba.github.io/frontendmentor-project/" target="_blank" rel="noopener noreferrer">
             <p class="project__frontend">More Frontend Project</p>
           </a>
@@ -165,7 +167,7 @@
       document.getElementById('button-moon').style.display = 'none'
       document.getElementById('button-sun').style.display = 'block'
       document.querySelector('header').style.backgroundColor = 'white'
-      document.querySelectorAll('.project>li').forEach(el => el.style.borderColor = 'black')
+      document.querySelectorAll('.project__li').forEach(el => el.style.borderColor = 'black')
     })
 
     document.getElementById('button-sun').addEventListener('click', () => {
@@ -175,7 +177,7 @@
       document.getElementById('button-sun').style.display = 'none'
       document.getElementById('button-moon').style.display = 'block'
       document.querySelector('header').style.backgroundColor = 'black'
-      document.querySelectorAll('.project>li').forEach(el => el.style.borderColor = 'white')
+      document.querySelectorAll('.project__li').forEach(el => el.style.borderColor = 'white')
     })
 
     document.getElementById('copy-year').textContent = new Date().getFullYear()

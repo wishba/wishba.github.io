@@ -85,7 +85,7 @@ section {
   text-align: center;
 }
 
-.project>li {
+.project__li {
   border: 1px solid white;
   border-radius: .5rem;
 }
