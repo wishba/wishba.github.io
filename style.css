@@ -75,6 +75,7 @@ main {
   border: 1px solid black;
   border-radius: 1rem;
   overflow: hidden;
+  background: white;
 }
 
 
@@ -87,6 +88,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  background: transparent;
 }
 
 #project .project__more a {
@@ -97,6 +99,7 @@ main {
   border-radius: 1rem;
   height: 100%;
   font-size: 1.5rem;
+  background: white;
 }
 
 #social ul {
