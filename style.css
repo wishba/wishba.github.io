@@ -77,6 +77,11 @@ main {
   overflow: hidden;
 }
 
+
+#project img:hover {
+  transform: translate(0, -0.5rem);
+}
+
 #project .project__more {
   border: none;
   display: flex;
