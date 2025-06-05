@@ -8,46 +8,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="body body--dark">
-  <header class="header">
-    <nav class="header__nav">
+<body>
+  <header>
+    <nav>
       <a href="#home">Home</a>
       <a href="#project">Project</a>
       <a href="#social">Social</a>
-      <a href="https://wishba-blog.vercel.app/">Blog</a>
+      <a href="https://wishba.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blog</a>
     </nav>
-
-    <!-- <div>
-      <button id="button-sun" class="header__button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-          strokeLinecap="round" strokeLinejoin="round" class="header__svg header__svg--sun">
-          <circle cx="12" cy="12" r="4" />
-          <path d="M12 2v2" />
-          <path d="M12 20v2" />
-          <path d="m4.93 4.93 1.41 1.41" />
-          <path d="m17.66 17.66 1.41 1.41" />
-          <path d="M2 12h2" />
-          <path d="M20 12h2" />
-          <path d="m6.34 17.66-1.41 1.41" />
-          <path d="m19.07 4.93-1.41 1.41" />
-        </svg>
-      </button>
-
-      <button id="button-moon" class="header__button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
-          strokeLinecap="round" strokeLinejoin="round" class="header__svg header__svg--moon">
-          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-        </svg>
-      </button>
-
-      <button>
-        toggle
-      </button>
-    </div> -->
   </header>
 
   <main>
-    <section id="home" class="home">
+    <section id="home">
       <h1>Hi! I'm Wisnu Bayu</h1>
       <p>
         I'm an aspiring front-end developer with a strong focus on building responsive and user-friendly web
@@ -65,29 +37,27 @@
     <section id="project">
       <h2>Project</h2>
 
-      <ul class="project">
-        <li class="project__li"><a href="https://wishba.github.io/intro-section-with-dropdown-navigation/"
-            target="_blank" rel="noopener noreferrer">
-            <img class="project__img" src="assets/intro navigation.png" alt="intro navigation">
+      <ul>
+        <li><a href="https://wishba.github.io/intro-section-with-dropdown-navigation/" target="_blank"
+            rel="noopener noreferrer">
+            <img src="assets/intro navigation.png" alt="intro navigation">
             <p>Product Page Dropdown Navigation</p>
           </a></li>
-        <li class="project__li"><a href="https://wishba-notes-app.netlify.app/" target="_blank"
-            rel="noopener noreferrer">
-            <img class="project__img" src="assets/react note.jpeg" alt="react todo">
+        <li><a href="https://wishba-notes-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/react note.jpeg" alt="react todo">
             <p>Notes App Serverless React Js</p>
           </a></li>
-        <li class="project__li"><a href="https://wishba.itch.io/pick-the-apples" target="_blank"
-            rel="noopener noreferrer">
-            <img class="project__img" src="assets/react game.png" alt="react game">
+        <li><a href="https://wishba.itch.io/pick-the-apples" target="_blank" rel="noopener noreferrer">
+            <img src="assets/react game.png" alt="react game">
             <p>Web Game Prototype React JS</p>
           </a></li>
-        <li class="project__flex">
-          <a class="project__li" href="https://wishba.github.io/frontendmentor-project/" rel="noopener noreferrer">
+        <li>
+          <a href="https://wishba.github.io/frontendmentor-project/" rel="noopener noreferrer">
             <p>More Frontend Project</p>
           </a>
 
-          <a class="project__li" href="https://www.linkedin.com/in/wisnu-bayu-54214329b/details/certifications/"
-            target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/wisnu-bayu-54214329b/details/certifications/" target="_blank"
+            rel="noopener noreferrer">
             <p>Certifications</p>
           </a>
         </li>
@@ -97,7 +67,7 @@
     <section id="social">
       <h2>Social</h2>
 
-      <ul class="social__list">
+      <ul>
         <li><a href="https://www.linkedin.com/in/wisnu-bayu-54214329b/" target="_blank" rel="noopener noreferrer">
             <svg width='5rem' xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
               stroke="currentColor">
@@ -163,32 +133,10 @@
 
   <footer>
     <hr>
-    <p class="footer">
-      &copy; <span id="copy-year"></span> Wisnu Bayu
-    </p>
+    <p> &copy; <span id="copy-year"></span> Wisnu Bayu </p>
   </footer>
 
   <script>
-    // document.getElementById('button-moon').addEventListener('click', () => {
-    //   console.log('light')
-    //   document.body.classList.add('body--light')
-    //   document.body.classList.remove('body--dark')
-    //   document.getElementById('button-moon').style.display = 'none'
-    //   document.getElementById('button-sun').style.display = 'block'
-    //   document.querySelector('header').style.backgroundColor = 'white'
-    //   document.querySelectorAll('.project__li').forEach(el => el.style.borderColor = 'black')
-    // })
-
-    // document.getElementById('button-sun').addEventListener('click', () => {
-    //   console.log('dark')
-    //   document.body.classList.add('body--dark')
-    //   document.body.classList.remove('body--light')
-    //   document.getElementById('button-sun').style.display = 'none'
-    //   document.getElementById('button-moon').style.display = 'block'
-    //   document.querySelector('header').style.backgroundColor = 'black'
-    //   document.querySelectorAll('.project__li').forEach(el => el.style.borderColor = 'white')
-    // })
-
     document.getElementById('copy-year').textContent = new Date().getFullYear()
   </script>
 </body>
