@@ -1,11 +1,29 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 3rem;
+  scroll-padding-top: 4rem;
 }
 
 body {
   max-width: 60rem;
   margin: auto;
+  padding: 1rem;
+  background: linear-gradient(-45deg, #a18cd1, #fbc2eb, #8ec5fc, #e0c3fc);
+  background-size: 300% 300%;
+  animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 img {
@@ -21,12 +39,23 @@ header {
   position: sticky;
   top: 0;
   background-color: white;
-  padding-top: .5rem;
+  padding: 1rem;
+  z-index: 99;
 }
 
 header nav {
   display: flex;
   gap: 1rem;
+}
+
+main {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #project ul {
