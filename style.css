@@ -38,9 +38,12 @@ a {
 header {
   position: sticky;
   top: 0;
-  background-color: white;
   padding: 1rem;
   z-index: 99;
+  background-color: #8ec5fc;
+  border: 1px solid black;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 header nav {
