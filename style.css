@@ -55,6 +55,7 @@ header nav {
   display: flex;
   gap: .5rem;
   align-items: center;
+  text-align: center;
 }
 
 header nav a:not(:last-child) {
