@@ -58,11 +58,6 @@ header nav {
   text-align: center;
 }
 
-header nav a:not(:last-child) {
-  border-right: 1px solid black;
-  padding-right: .5rem;
-}
-
 main {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.2);
