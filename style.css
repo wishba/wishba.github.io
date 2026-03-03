@@ -7,7 +7,7 @@ body {
   max-width: 60rem;
   margin: auto;
   padding: 1rem;
-  background: linear-gradient(-45deg, #a18cd1, #fbc2eb, #8ec5fc, #e0c3fc);
+  background: linear-gradient(-45deg, #84fab0, #8fd3f4, #a6c1ee, #cfd9df);
   background-size: 300% 300%;
   animation: gradientBG 12s ease infinite;
 }
