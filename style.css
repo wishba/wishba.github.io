@@ -114,3 +114,7 @@ main {
   justify-content: space-around;
   text-align: center;
 }
+
+footer p {
+  padding: 0 1rem;
+}
