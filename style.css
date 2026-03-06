@@ -65,6 +65,31 @@ main {
   border: 1px solid black;
 }
 
+#home {
+  display: flex;
+  gap: 1rem;
+}
+
+#home div p {
+  text-align: justify;
+  margin-bottom: 0;
+}
+
+#home img {
+  max-height: 12rem;
+  margin-top: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  #home {
+    flex-direction: column;
+  }
+
+  #home img {
+    margin: auto;
+  }
+}
+
 #project ul {
   list-style: none;
   margin: 0;
