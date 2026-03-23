@@ -1,3 +1,7 @@
+:root {
+  --shadow-soft: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
@@ -25,24 +29,28 @@ header {
   margin-bottom: 1rem;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-soft);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid black;
 }
 
-header nav {
+nav {
   display: flex;
   gap: .5rem;
   align-items: center;
   text-align: center;
 }
 
+nav a:hover {
+  font-weight: bold;
+}
+
 main {
   padding: 1rem;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-soft);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid black;
@@ -86,7 +94,15 @@ main {
 #project li {
   border: 1px solid black;
   border-radius: 1rem;
+}
+
+#project li:not(.project__more) {
   overflow: hidden;
+}
+
+#project li:not(.project__more):hover,
+#project .project__more a:hover {
+  box-shadow: var(--shadow-soft);
 }
 
 @media only screen and (min-width: 768px) {
@@ -122,10 +138,26 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  #social ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+#social li {
+  border-radius: 1rem;
+  border: 1px solid black;
+  padding-top: 1rem;
+}
+
+#social li:hover {
+  box-shadow: var(--shadow-soft);
 }
 
 footer p {
