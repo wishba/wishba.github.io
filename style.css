@@ -95,10 +95,6 @@ main {
   }
 }
 
-#project img:hover {
-  transform: translate(0, -0.5rem);
-}
-
 #project p {
   margin: 1rem;
 }
