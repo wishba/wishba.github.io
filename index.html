@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wisnu Bayu</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
-<body>
-  <header data-reveal>
+<body data-aos="fade-up">
+  <div id="tsparticles"></div>
+
+  <header>
     <nav>
       <a href="https://wishba.github.io/"><b>Home</b></a>|
       <a href="https://wishba.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blog</a>|
@@ -32,7 +35,7 @@
         </p>
       </div>
 
-      <img src="assets/web dev ilust.png" alt="web dev ilust" data-reveal>
+      <img src="assets/web dev ilust bnw.webp" alt="web dev ilust">
     </section>
 
     <section id="project">
@@ -141,39 +144,36 @@
     <p> &copy; <span id="copy-year"></span> Wisnu Bayu </p>
   </footer>
 
+  <script>document.getElementById('copy-year').textContent = new Date().getFullYear()</script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init()</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2/tsparticles.engine.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.bundle.min.js"></script>
   <script>
-    document.getElementById('copy-year').textContent = new Date().getFullYear()
+      (async () => {
+        await loadLinksPreset(tsParticles);
 
-    const prefersReducedMotion = globalThis.matchMedia('(prefers-reduced-motion: reduce)').matches
-    const revealNodes = document.querySelectorAll('[data-reveal]')
-
-    if (prefersReducedMotion || !('IntersectionObserver' in globalThis)) {
-      revealNodes.forEach((node) => node.classList.add('is-visible'))
-    } else {
-      document.documentElement.classList.add('motion-ok')
-
-      revealNodes.forEach((node, index) => {
-        const delay = Math.min(index * 70, 420)
-        node.style.setProperty('--reveal-delay', `${delay}ms`)
-      })
-
-      const revealObserver = new IntersectionObserver(
-        (entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('is-visible')
-              observer.unobserve(entry.target)
-            }
-          })
-        },
-        {
-          threshold: 0.18,
-          rootMargin: '0px 0px -8% 0px'
-        }
-      )
-
-      revealNodes.forEach((node) => revealObserver.observe(node))
-    }
+        await tsParticles.load("tsparticles", {
+          preset: "links",
+          background: {
+            color: "#ffffff",
+          },
+          particles: {
+            color: {
+              value: "#000000",
+            },
+            links: {
+              color: "#000000",
+            },
+          },
+          fullScreen: {
+            enable: true,
+            zIndex: -1
+          },
+        });
+      })();
   </script>
 </body>
 
