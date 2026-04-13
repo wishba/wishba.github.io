@@ -10,6 +10,8 @@
 </head>
 
 <body data-aos="fade-up">
+  <div id="tsparticles"></div>
+
   <header>
     <nav>
       <a href="https://wishba.github.io/"><b>Home</b></a>|
@@ -141,8 +143,36 @@
   </footer>
 
   <script>document.getElementById('copy-year').textContent = new Date().getFullYear()</script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init()</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine@2/tsparticles.engine.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2/tsparticles.preset.links.bundle.min.js"></script>
+  <script>
+      (async () => {
+        await loadLinksPreset(tsParticles);
+
+        await tsParticles.load("tsparticles", {
+          preset: "links",
+          background: {
+            color: "#ffffff",
+          },
+          particles: {
+            color: {
+              value: "#000000",
+            },
+            links: {
+              color: "#000000",
+            },
+          },
+          fullScreen: {
+            enable: true,
+            zIndex: -1
+          },
+        });
+      })();
+  </script>
 </body>
 
 </html>

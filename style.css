@@ -7,12 +7,6 @@ html {
   scroll-padding-top: 4rem;
 }
 
-body {
-  max-width: 60rem;
-  margin: auto;
-  padding: 1rem;
-}
-
 img {
   max-width: 100%;
 }
@@ -20,6 +14,14 @@ img {
 a {
   text-decoration: none;
   color: black;
+}
+
+header,
+main,
+footer {
+  max-width: 60rem;
+  margin: auto;
+  padding: 1rem;
 }
 
 header {
@@ -160,8 +162,4 @@ main {
 
 #social li:hover {
   box-shadow: var(--shadow-soft);
-}
-
-footer p {
-  padding: 0 1rem;
 }
